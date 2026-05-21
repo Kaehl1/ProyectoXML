@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="GreenProtocol.xsl" type="text/xsl"?>
 <!DOCTYPE perfil SYSTEM "GreenProtocol.dtd">
-<perfil>
+<perfil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EsquemaMuñecaRusa.xsd">
     <usuario>Kaehl</usuario>
     <juego nombre="Green Protocol">
-        <partida id="001">
-            <clase>Guerrero</clase>
-            <jefe>
-                <nombre>Vaarun</nombre>
-                <clase>Paladín</clase>
-            </jefe>
+        <partidas>
+            <partida id="001">
+               <clase>Guerrero</clase>
+              <jefe>
+             <nombre>Vaarun</nombre>
+             <clase>Paladín</clase>
+             </jefe>
             <puntos>17</puntos>
-        </partida>
+             </partida>
+        </partidas>
         <logros>
             <logro puntos="5" completado="no" secreto="no">
                 <nombre>Alcóholico</nombre>
