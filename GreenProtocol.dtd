@@ -1,6 +1,7 @@
 <!ELEMENT perfil (usuario,juego)>
 <!ELEMENT usuario (#PCDATA)>
-<!ELEMENT juego (partida,logros)>
+<!ELEMENT juego (partidas,logros)>
+<!ELEMENT partidas (partida)>
 <!ATTLIST juego nombre CDATA #REQUIRED>
 <!ELEMENT partida (clase,jefe,puntos)>
 <!ATTLIST partida id NMTOKEN #REQUIRED>
