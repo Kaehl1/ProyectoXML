@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!--Comienza el perfil, complejo, con el usuario que es simple y el juego que es complejo-->
+    <xs:element name="perfil">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="usuario" type="xs:string"/>
+                <!--Comienza el juego, clase compleja. con el elemento partidas y el elemento logros, ambos complejos.-->
+                <xs:element name="juego">
+                    <xs:complexType>  
+                        <xs:sequence>
+                            <!--Comienza partidas-->
+                            <xs:element name="partidas">  
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <!--Comienza partida-->
+                                        <xs:element name="partida" maxOccurs="unbounded">  
+                                            <xs:complexType>  
+                                                <xs:sequence>
+                                                    <xs:element name="clase" type="xs:string"/>  
+                                                    <xs:element name="jefe">  
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="nombre" type="xs:string"/>  
+                                                                <xs:element name="clase" type="xs:string"/>  
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>  
+                                                    <xs:element name="puntos" type="xs:integer"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="id" type="xs:string"/>  
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <!--Comienza logros-->
+                            <xs:element name="logros"> 
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <!--Comienza logro-->
+                                        <xs:element name="logro" maxOccurs="unbounded">  
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nombre" type="xs:string"/>
+                                                    <xs:element name="descripcion" type="xs:string"/>
+                                                </xs:sequence> 
+                                                <xs:attribute name="puntos"     type="xs:integer"/> 
+                                                <xs:attribute name="completado" type="xs:NMTOKEN"/>  
+                                                <xs:attribute name="secreto"    type="xs:NMTOKEN"/>  
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="nombre" type="xs:string"/>  
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
