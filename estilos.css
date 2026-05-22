@@ -1,0 +1,82 @@
+/* --- ESTILOS GENERALES (Tema Consola Retro) --- */
+body {
+    background-color: #050505; /* Fondo casi negro puro */
+    color: #39ff14; /* Verde fosforito (Neon Green) */
+    font-family: 'Courier New', Courier, monospace; /* Fuente de terminal */
+    margin: 0;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2 fracciones izq (tabla), 1 fracción der (historial) */
+    gap: 40px; /* Espacio entre columnas */
+    align-items: start; /* Para que ambos bloques empiecen desde arriba */
+}
+
+/* --- TABLA DE LOGROS (Columna Izquierda) --- */
+table {
+    grid-column: 1; /* Posiciona en la izquierda */
+    grid-row: 1;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.15); /* Resplandor sutil */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #39ff14;
+}
+
+th {
+    background-color: #111;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px #39ff14; /* Texto brillante */
+}
+
+
+
+tr:hover {
+    background-color: #113311; /* Resalta la fila al pasar el ratón */
+}
+
+/* --- HISTORIAL DE PARTIDAS (Columna Derecha) --- */
+.historial {
+    grid-column: 2; /* Posiciona en la derecha */
+    grid-row: 1;
+    border-left: 2px dashed #39ff14;
+    padding-left: 30px;
+}
+
+.titulo-historial {
+    text-align: center;
+    text-shadow: 0 0 8px #39ff14;
+    border-bottom: 2px solid #39ff14;
+    padding-bottom: 10px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.partida {
+    background-color: #000;
+    border: 1px solid #39ff14;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 10px rgba(57, 255, 20, 0.1);
+}
+
+.partida h3 {
+    margin-top: 0;
+    text-shadow: 0 0 5px #39ff14;
+    border-bottom: 1px solid #1a6b0c;
+    padding-bottom: 5px;
+}
+
+/* Quitar los puntitos de la lista y dar estilo retro */
+.partida li {
+    list-style-type: none;
+    padding: 8px 0;
+    border-bottom: 1px dashed #1a6b0c;
+}
+
+.partida li:last-child {
+    border-bottom: none;
+}

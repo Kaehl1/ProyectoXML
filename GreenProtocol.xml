@@ -14,75 +14,99 @@
                 </jefe>
                 <puntos>17</puntos>
             </partida>
+            <partida id="002">
+                <clase>Pícaro</clase>
+                <jefe>
+                    <nombre>Galactius</nombre>
+                    <clase>Guerrero</clase>
+                </jefe>
+                <puntos>0</puntos>
+            </partida>
+            <partida id="003">
+                <clase>Pícaro</clase>
+                <jefe>
+                    <nombre>Horacio</nombre>
+                    <clase>Paladín</clase>
+                </jefe>
+                <puntos>24</puntos>
+            </partida>
+            <partida id="004">
+                <clase>Paladin</clase>
+                <jefe>
+                    <nombre>Gregorio</nombre>
+                    <clase>Guerrero</clase>
+                </jefe>
+                <puntos>0</puntos>
+            </partida>
         </partidas>
         <logros>
-            <logro puntos="5" completado="no" secreto="no">
+            <logro puntos="5" completado="si" secreto="no">
                 <nombre>Alcóholico</nombre>
-                <descripccion>Has consumido una poción</descripccion>
+                <descripcion>Has consumido una poción</descripcion>
             </logro>
-            <logro puntos="5" completado="no" secreto="no">
+            <logro puntos="5" completado="si" secreto="no">
                 <nombre>¿Y este botón que hace?</nombre>
-                <descripccion>Has utilizado tu habilidad especial</descripccion>
+                <descripcion>Has utilizado tu habilidad especial</descripcion>
             </logro>
-            <logro puntos="5" completado="no" secreto="no">
+            <logro puntos="5" completado="si" secreto="no">
                 <nombre>La primera regla</nombre>
-                <descripccion>Has jugado tu primera partida</descripccion>
+                <descripcion>Has jugado tu primera partida</descripcion>
             </logro>
-            <logro puntos="5" completado="no" secreto="no">
+            <logro puntos="5" completado="si" secreto="no">
                 <nombre>Bautismo de acero</nombre>
-                <descripccion>Has jugado una partida siendo Guerrero</descripccion>
+                <descripcion>Has jugado una partida siendo Guerrero</descripcion>
             </logro>
-            <logro puntos="5" completado="no" secreto="no">
+            <logro puntos="5" completado="si" secreto="no">
                 <nombre>Cruzada personal</nombre>
-                <descripccion>Has jugado una partida siendo Paladin</descripccion>
+                <descripcion>Has jugado una partida siendo Paladin</descripcion>
             </logro>
-            <logro puntos="5" completado="no" secreto="no">
+            <logro puntos="5" completado="si" secreto="no">
                 <nombre>Presentación de credenciales</nombre>
-                <descripccion>Has jugado una partida siendo Pícaro</descripccion>
+                <descripcion>Has jugado una partida siendo Pícaro</descripcion>
             </logro>
-            <logro puntos="10" completado="no" secreto="no">
+            <logro puntos="10" completado="si" secreto="no">
                 <nombre>Dominio del ring</nombre>
-                <descripccion>Has ganado tu primera partida</descripccion>
+                <descripcion>Has ganado tu primera partida</descripcion>
             </logro>
-            <logro puntos="10" completado="no" secreto="no">
+            <logro puntos="10" completado="si" secreto="no">
                 <nombre>La senda de la espada</nombre>
-                <descripccion>Has ganado tu primera partida siendo Guerrero</descripccion>
+                <descripcion>Has ganado tu primera partida siendo Guerrero</descripcion>
             </logro>
             <logro puntos="10" completado="no" secreto="no">
                 <nombre>Caminante del sol</nombre>
-                <descripccion>Has ganado tu primera partida siendo Paladín</descripccion>
+                <descripcion>Has ganado tu primera partida siendo Paladín</descripcion>
             </logro>
-            <logro puntos="10" completado="no" secreto="no">
+            <logro puntos="10" completado="si" secreto="no">
                 <nombre>Veneno en las venas</nombre>
-                <descripccion>Has ganado tu primera partida siendo Pícaro</descripccion>
+                <descripcion>Has ganado tu primera partida siendo Pícaro</descripcion>
             </logro>
             <logro puntos="10" completado="no" secreto="no">
                 <nombre>Chatarra</nombre>
-                <descripccion>Has ganado tu primera partida a un jefe Guerrero</descripccion>
+                <descripcion>Has ganado tu primera partida a un jefe Guerrero</descripcion>
             </logro>
-            <logro puntos="10" completado="no" secreto="no">
+            <logro puntos="10" completado="si" secreto="no">
                 <nombre>Hereje</nombre>
-                <descripccion>Has ganado tu primera partida a un jefe Paladín</descripccion>
+                <descripcion>Has ganado tu primera partida a un jefe Paladín</descripcion>
             </logro>
             <logro puntos="10" completado="no" secreto="no">
                 <nombre>Caza-ratas</nombre>
-                <descripccion>Has ganado tu primera partida a un jefe Pícaro</descripccion>
+                <descripcion>Has ganado tu primera partida a un jefe Pícaro</descripcion>
             </logro>
-            <logro puntos="15" completado="no" secreto="no">
+            <logro puntos="15" completado="si" secreto="no">
                 <nombre>Bajo control</nombre>
-                <descripccion>Ganar una partida con 10HP o menos</descripccion>
+                <descripcion>Ganar una partida con 10HP o menos</descripcion>
             </logro>
             <logro puntos="15" completado="no" secreto="no">
                 <nombre>Depredador Herido</nombre>
-                <descripccion>Ganar una partida con 65HP o más</descripccion>
+                <descripcion>Ganar una partida con 65HP o más</descripcion>
             </logro>
-            <logro puntos="25" completado="no" secreto="si">
+            <logro puntos="25" completado="si" secreto="si">
                 <nombre>Freno facial</nombre>
-                <descripccion>Has chocado contra un muro</descripccion>
+                <descripcion>Has chocado contra un muro</descripcion>
             </logro>
             <logro puntos="25" completado="no" secreto="si">
                 <nombre>Fantasma del ring</nombre>
-                <descripccion>Has ganado una partida sin recibir daño</descripccion>
+                <descripcion>Has ganado una partida sin recibir daño</descripcion>
             </logro>
         </logros>
     </juego>
