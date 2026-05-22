@@ -1,0 +1,74 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="perfil">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="usuario"/>
+                <xs:element ref="juego"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="juego">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="partidas"/>
+                <xs:element ref="logros"/>
+            </xs:sequence>
+            <xs:attribute name="nombre" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="partidas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="partida" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="partida">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="clase"/>
+                <xs:element ref="jefe"/>
+                <xs:element ref="puntos"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="jefe">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre"/>
+                <xs:element ref="clase"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="logros">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="logro" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="logro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre"/>
+                <xs:element ref="descripccion"/>
+            </xs:sequence>
+            <xs:attribute name="puntos" type="xs:integer"/>
+            <xs:attribute name="completado" type="xs:NMTOKEN"/>
+            <xs:attribute name="secreto" type="xs:NMTOKEN"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="usuario" type="xs:string"/>
+    <xs:element name="clase" type="xs:string"/>
+    <xs:element name="nombre" type="xs:string"/>
+    <xs:element name="puntos" type="xs:integer"/>
+    <xs:element name="descripccion" type="xs:string"/>
+</xs:schema>
