@@ -1,23 +1,32 @@
-/* --- ESTILOS GENERALES (Tema Consola Retro) --- */
+/*GENERAL*/
 body {
-    background-color: #050505; /* Fondo casi negro puro */
-    color: #39ff14; /* Verde fosforito (Neon Green) */
-    font-family: 'Courier New', Courier, monospace; /* Fuente de terminal */
+    background-color: #050505;
+    color: #39ff14;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 30px;
     display: grid;
-    grid-template-columns: 2fr 1fr; /* 2 fracciones izq (tabla), 1 fracción der (historial) */
-    gap: 40px; /* Espacio entre columnas */
-    align-items: start; /* Para que ambos bloques empiecen desde arriba */
+    grid-template-columns: 2fr 1fr; /*2 partes izq, 1 parte der*/
+    gap: 40px; /*Espacio entre columnas*/
+    align-items: start; /*Para que ambos bloques empiecen desde arriba*/
 }
 
-/* --- TABLA DE LOGROS (Columna Izquierda) --- */
+.resumen{
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*TABLA LOGROS(izquierda)*/
 table {
-    grid-column: 1; /* Posiciona en la izquierda */
+    grid-column: 1;
     grid-row: 1;
     width: 100%;
     border-collapse: collapse;
-    box-shadow: 0 0 15px rgba(57, 255, 20, 0.15); /* Resplandor sutil */
 }
 
 th, td {
@@ -27,20 +36,29 @@ th, td {
 }
 
 th {
-    background-color: #111;
+    background-color: #1a1a1a;
+    font-size: 20px;
     text-transform: uppercase;
-    text-shadow: 0 0 8px #39ff14; /* Texto brillante */
 }
-
-
 
 tr:hover {
-    background-color: #113311; /* Resalta la fila al pasar el ratón */
+    background-color: #113311;
 }
 
-/* --- HISTORIAL DE PARTIDAS (Columna Derecha) --- */
+.nombre-logro{
+    text-transform: uppercase;
+}
+
+.titulo-logros {
+    text-align: center;
+    border-bottom: 2px solid #39ff14;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/*HISTORIAL(derecha)*/
 .historial {
-    grid-column: 2; /* Posiciona en la derecha */
+    grid-column: 2;
     grid-row: 1;
     border-left: 2px dashed #39ff14;
     padding-left: 30px;
@@ -48,10 +66,8 @@ tr:hover {
 
 .titulo-historial {
     text-align: center;
-    text-shadow: 0 0 8px #39ff14;
     border-bottom: 2px solid #39ff14;
-    padding-bottom: 10px;
-    margin-top: 0;
+    margin: 0;
     text-transform: uppercase;
 }
 
@@ -60,17 +76,15 @@ tr:hover {
     border: 1px solid #39ff14;
     padding: 15px;
     margin-bottom: 20px;
-    box-shadow: inset 0 0 10px rgba(57, 255, 20, 0.1);
 }
 
 .partida h3 {
     margin-top: 0;
-    text-shadow: 0 0 5px #39ff14;
     border-bottom: 1px solid #1a6b0c;
     padding-bottom: 5px;
+    text-transform: uppercase;
 }
 
-/* Quitar los puntitos de la lista y dar estilo retro */
 .partida li {
     list-style-type: none;
     padding: 8px 0;
