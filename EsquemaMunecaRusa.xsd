@@ -28,7 +28,7 @@
                                                     </xs:element>  
                                                     <xs:element name="puntos" type="xs:integer"/>
                                                 </xs:sequence>
-                                                <xs:attribute name="id" type="xs:string"/>  
+                                                <xs:attribute name="id" type="xs:integer"/>  
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
@@ -46,8 +46,8 @@
                                                     <xs:element name="descripcion" type="xs:string"/>
                                                 </xs:sequence> 
                                                 <xs:attribute name="puntos"     type="xs:integer"/> 
-                                                <xs:attribute name="completado" type="xs:NMTOKEN"/>  
-                                                <xs:attribute name="secreto"    type="xs:NMTOKEN"/>  
+                                                <xs:attribute name="completado" type="xs:string"/>  
+                                                <xs:attribute name="secreto"    type="xs:string"/>  
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>

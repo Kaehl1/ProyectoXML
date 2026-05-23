@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="GreenProtocol.xsl" type="text/xsl"?>
-<!--<!DOCTYPE perfil SYSTEM "GreenProtocol.dtd">-->
+<!--<!DOCTYPE perfil SYSTEM "GreenProtocol.dtd"><perfil>-->
 <!--<perfil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="salami.xsd">-->
 <perfil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EsquemaMunecaRusa.xsd">
     <usuario>Kaehl</usuario>

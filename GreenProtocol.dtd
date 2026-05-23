@@ -2,7 +2,7 @@
 <!ELEMENT usuario (#PCDATA)>
 <!ELEMENT juego (partidas,logros)>
 <!ATTLIST juego nombre CDATA #REQUIRED>
-<!ELEMENT partidas (partida+)>
+<!ELEMENT partidas (partida*)>
 <!ELEMENT partida (clase,jefe,puntos)>
 <!ATTLIST partida id CDATA #REQUIRED>
 <!ELEMENT clase (#PCDATA)>
@@ -11,7 +11,7 @@
 <!ELEMENT puntos (#PCDATA)>
 <!ELEMENT logros (logro+)>
 <!ELEMENT logro (nombre,descripcion)>
-<!ATTLIST logro puntos (10|15|25|5) #REQUIRED>
+<!ATTLIST logro puntos (5|10|15|25) #REQUIRED>
 <!ATTLIST logro completado (no|si) #REQUIRED>
 <!ATTLIST logro secreto (no|si) #REQUIRED>
 <!ELEMENT descripcion (#PCDATA)>

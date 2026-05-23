@@ -61,8 +61,8 @@
                 <xs:element ref="descripcion"/>
             </xs:sequence>
             <xs:attribute name="puntos" type="xs:integer"/>
-            <xs:attribute name="completado" type="xs:NMTOKEN"/>
-            <xs:attribute name="secreto" type="xs:NMTOKEN"/>
+            <xs:attribute name="completado" type="xs:string"/>
+            <xs:attribute name="secreto" type="xs:string"/>
         </xs:complexType>
     </xs:element>
 
