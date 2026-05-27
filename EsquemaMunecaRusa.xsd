@@ -1,52 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <!--Comienza el perfil, complejo, con el usuario que es simple y el juego que es complejo-->
+    <!--Comienza el perfil, elemento complejo, con el usuario que es simple y el juego que es complejo.-->
     <xs:element name="perfil">
         <xs:complexType>
             <xs:sequence>
+                <!--Elemento usuario, de tipo simple y con tipo de datos String.-->
                 <xs:element name="usuario" type="xs:string"/>
                 <!--Comienza el juego, clase compleja. con el elemento partidas y el elemento logros, ambos complejos.-->
                 <xs:element name="juego">
                     <xs:complexType>  
                         <xs:sequence>
-                            <!--Comienza partidas-->
+                            <!--Comienza partidas, que es un elemento complejo, que contiene el elemento partida.-->
                             <xs:element name="partidas">  
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <!--Comienza partida-->
+                                        <!--Comienza partida, que es un elemento de tipo complejo y tiene el parametro max0ccurs en unbounded, lo que significa que se puede repetir las veces que haga falta-->
                                         <xs:element name="partida" maxOccurs="unbounded">  
                                             <xs:complexType>  
                                                 <xs:sequence>
+                                                    <!--Comienza el elemento clase, que es de tipo simple y posee un tipo de datos String.-->
                                                     <xs:element name="clase" type="xs:string"/>  
+                                                    <!--Comienza el elemento jefe, que es complejo, y posee los elementos nombre y clase.-->
                                                     <xs:element name="jefe">  
                                                         <xs:complexType>
                                                             <xs:sequence>
+                                                                <!--Elemento nombre, de tipo simple y tipo de datos String.-->
                                                                 <xs:element name="nombre" type="xs:string"/>  
+                                                                <!--Elemento clase, de tipo simple y de tipo de datos String.-->
                                                                 <xs:element name="clase" type="xs:string"/>  
                                                             </xs:sequence>
                                                         </xs:complexType>
                                                     </xs:element>  
+                                                    <!--Comienza el elemento puntos, que es simple y ademas posee un tipo de datos Integer.-->
                                                     <xs:element name="puntos" type="xs:integer"/>
                                                 </xs:sequence>
+                                                <!--Comienza el atributo ID, que en este caso posee un tipo de datos Integer-->
                                                 <xs:attribute name="id" type="xs:integer"/>  
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <!--Comienza logros-->
+                            <!--Comienza logros, elemento de tipo complejo al que le pertenece el elemento logro-->
                             <xs:element name="logros"> 
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <!--Comienza logro-->
+                                        <!--Comienza el elemento logoros, de tipo complejo con los elementos nombre y descripcion-->
                                         <xs:element name="logro" maxOccurs="unbounded">  
                                             <xs:complexType>
                                                 <xs:sequence>
+                                                    <!--Elemento nombre, de tipo simple con un tipo de datos String.-->
                                                     <xs:element name="nombre" type="xs:string"/>
+                                                    <!--Elemento descripcion, de tipo simple con un tipo de datos String-->
                                                     <xs:element name="descripcion" type="xs:string"/>
                                                 </xs:sequence> 
+                                                <!--Atributo puntos de tipo integer-->
                                                 <xs:attribute name="puntos"     type="xs:integer"/> 
+                                                <!--Atributo Completado de tipo string-->
                                                 <xs:attribute name="completado" type="xs:string"/>  
+                                                <!--Atributo secreto de clase String-->
                                                 <xs:attribute name="secreto"    type="xs:string"/>  
                                             </xs:complexType>
                                         </xs:element>
@@ -54,6 +66,7 @@
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
+                        <!--Atributo nombre que posee un tipo de datos de clase String.-->
                         <xs:attribute name="nombre" type="xs:string"/>  
                     </xs:complexType>
                 </xs:element>
