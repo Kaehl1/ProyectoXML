@@ -11,7 +11,7 @@ body {
     align-items: start; /*Para que ambos bloques empiecen desde arriba*/
 }
 
-.resumen{
+.resumen{/*Organiza los elemetos de forma que ocupen todo el ancho de la tabla*/
     display:flex;
     justify-content: space-around;
     text-align: center;
@@ -29,27 +29,27 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th, td {/*Establece un padding, y un borde de color verde, alinea el texto al centro*/
     padding: 12px 15px;
     text-align: center;
     border: 1px solid #39ff14;
 }
 
-th {
+th {/*Establece el fondo, el tamaño de la fuente y lo pone en mayusculas*/
     background-color: #1a1a1a;
     font-size: 20px;
     text-transform: uppercase;
 }
 
-tr:hover {
+tr:hover {/*Resplandor al pasar el raton*/
     background-color: #113311;
 }
 
-.nombre-logro{
+.nombre-logro{/*Pone el nombre del logro con la primera en mayuscula*/
     text-transform: uppercase;
 }
 
-.titulo-logros {
+.titulo-logros, .titulo-historial {/*Establece el titulo de los logros y del historial en mayuscula*/
     text-align: center;
     border-bottom: 2px solid #39ff14;
     margin: 0;
@@ -57,40 +57,33 @@ tr:hover {
 }
 
 /*HISTORIAL(derecha)*/
-.historial {
+.historial {/*Historial de partidas a la derecha de la pantalla*/
     grid-column: 2;
     grid-row: 1;
     border-left: 2px dashed #39ff14;
     padding-left: 30px;
 }
 
-.titulo-historial {
-    text-align: center;
-    border-bottom: 2px solid #39ff14;
-    margin: 0;
-    text-transform: uppercase;
-}
-
-.partida {
+.partida {/*Estiliza el elemento partida y le pone margen, padding y borde*/
     background-color: #000;
     border: 1px solid #39ff14;
     padding: 15px;
     margin-bottom: 20px;
 }
 
-.partida h3 {
+.partida h3 {/*Estilo del titulo h3 del elemento partida*/
     margin-top: 0;
     border-bottom: 1px solid #1a6b0c;
     padding-bottom: 5px;
     text-transform: uppercase;
 }
 
-.partida li {
+.partida li {/*Estiliza los elementos de la lista de cada partida*/
     list-style-type: none;
     padding: 8px 0;
     border-bottom: 1px dashed #1a6b0c;
 }
 
-.partida li:last-child {
+.partida li:last-child {/*Quita el borde inferior de cada elemento de la lista de partida*/
     border-bottom: none;
 }
