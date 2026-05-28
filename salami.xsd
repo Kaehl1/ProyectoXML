@@ -107,7 +107,6 @@
     <xs:element name="nombre" type="xs:string"/>
     <xs:element name="puntos" type="xs:integer"/>
     <xs:element name="descripcion" type="xs:string"/>
-    <xs:element name="nombre" type="xs:string"/>
     <xs:element name="completado" type="xs:string"/>
     <xs:element name="secreto" type="xs:string"/>
     <xs:element name="id" type="xs:integer"/>
