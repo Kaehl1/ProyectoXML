@@ -72,32 +72,9 @@
                 <xs:element ref="nombre"/>
                 <xs:element ref="descripcion"/>
             </xs:sequence>
-            <xs:attribute ref="puntos">
-                <xs:simpleType>
-                    <xs:restriction base="xs:integer">
-                        <xs:enumeration value="5"/>
-                        <xs:enumeration value="10"/>
-                        <xs:enumeration value="15"/>
-                        <xs:enumeration value="25"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:attribute>
-            <xs:attribute ref="completado">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="no"/>
-                        <xs:enumeration value="si"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:attribute>
-            <xs:attribute ref="secreto">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="no"/>
-                        <xs:enumeration value="si"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:attribute>
+            <xs:attribute ref="puntos"/>
+            <xs:attribute ref="completado"/>
+            <xs:attribute ref="secreto"/>
         </xs:complexType>
     </xs:element>
 
@@ -110,4 +87,36 @@
     <xs:element name="completado" type="xs:string"/>
     <xs:element name="secreto" type="xs:string"/>
     <xs:element name="id" type="xs:integer"/>
+
+    <xs:attribute name="nombre" type="xs:string"/>
+    <xs:attribute name="id" type="xs:integer"/>
+
+    <xs:attribute name="puntos">
+             <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:enumeration value="5"/>
+                        <xs:enumeration value="10"/>
+                        <xs:enumeration value="15"/>
+                        <xs:enumeration value="25"/>
+                    </xs:restriction>
+                </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="completado">
+             <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="no"/>
+                        <xs:enumeration value="si"/>
+                    </xs:restriction>
+                </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="secreto">
+             <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="no"/>
+                        <xs:enumeration value="si"/>
+                    </xs:restriction>
+                </xs:simpleType>
+    </xs:attribute>
 </xs:schema>
