@@ -13,7 +13,7 @@ body {
 
 .resumen{/*Organiza los elemetos de forma que ocupen todo el ancho de la tabla*/
     display:flex;
-    justify-content: space-around;
+    justify-content: space-around;/*Rellena todo el ancho disponible*/
     text-align: center;
     font-size: 1.1em;
     font-weight: bold;
@@ -60,7 +60,7 @@ tr:hover {/*Resplandor al pasar el raton*/
 .historial {/*Historial de partidas a la derecha de la pantalla*/
     grid-column: 2;
     grid-row: 1;
-    border-left: 2px dashed #39ff14;
+    border-left: 2px dashed #39ff14;/*El borde de la izquierda de las partidas es una linea discontinua*/
     padding-left: 30px;
 }
 
@@ -84,6 +84,6 @@ tr:hover {/*Resplandor al pasar el raton*/
     border-bottom: 1px dashed #1a6b0c;
 }
 
-.partida li:last-child {/*Quita el borde inferior de cada elemento de la lista de partida*/
+.partida li:last-child {/*Quita el borde inferior del ultimo elemento de la lista de partida*/
     border-bottom: none;
 }

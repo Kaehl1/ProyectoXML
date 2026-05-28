@@ -3,9 +3,10 @@
 <!--<!DOCTYPE perfil SYSTEM "GreenProtocol.dtd"><perfil>-->
 <!--<perfil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="salami.xsd">-->
 <perfil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EsquemaMunecaRusa.xsd">
+    <!--Todo esta contenido en el elemento perfil ya que se permitirian mas de 1 juego-->
     <usuario>Kaehl</usuario>
-    <juego nombre="Green Protocol">
-        <partidas>
+    <juego nombre="Green Protocol"><!--El elemento juego contiene toda la informacion de las partidas del juegador y los logros conseguidos del mismo-->
+        <partidas><!--Dentro se escribirian una a una las partidas del jugador-->
             <partida id="001">
                 <clase>Guerrero</clase>
                 <jefe>
@@ -39,7 +40,7 @@
                 <puntos>0</puntos>
             </partida>
         </partidas>
-        <logros>
+        <logros><!--Contiene todos los logros del juego tanto si estan completados como si no-->
             <logro puntos="5" completado="si" secreto="no">
                 <nombre>Alcóholico</nombre>
                 <descripcion>Has consumido una poción</descripcion>

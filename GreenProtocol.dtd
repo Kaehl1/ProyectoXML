@@ -1,17 +1,17 @@
-<!ELEMENT perfil (usuario,juego)>
-<!ELEMENT usuario (#PCDATA)>
-<!ELEMENT juego (partidas,logros)>
-<!ATTLIST juego nombre CDATA #REQUIRED>
-<!ELEMENT partidas (partida*)>
-<!ELEMENT partida (clase,jefe,puntos)>
-<!ATTLIST partida id CDATA #REQUIRED>
-<!ELEMENT clase (#PCDATA)>
-<!ELEMENT jefe (nombre,clase)>
-<!ELEMENT nombre (#PCDATA)>
-<!ELEMENT puntos (#PCDATA)>
-<!ELEMENT logros (logro+)>
-<!ELEMENT logro (nombre,descripcion)>
-<!ATTLIST logro puntos (5|10|15|25) #REQUIRED>
-<!ATTLIST logro completado (no|si) #REQUIRED>
-<!ATTLIST logro secreto (no|si) #REQUIRED>
-<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT perfil (usuario,juego)><!--Perfil contiene usuario y juego-->
+<!ELEMENT usuario (#PCDATA)><!--Usuario contiene texto analizado que permite etiquetas-->
+<!ELEMENT juego (partidas,logros)><!--Juego contiene partidas y logros-->
+<!ATTLIST juego nombre CDATA #REQUIRED><!--Atributo nombre del elemento juego: Obligatorio, Texto plano-->
+<!ELEMENT partidas (partida*)><!--Partidas contiene partida (puede tener 0 partida)-->
+<!ELEMENT partida (clase,jefe,puntos)><!--Partida contiene clase, jefe y puntos-->
+<!ATTLIST partida id CDATA #REQUIRED><!--Atributo id del elemento partida: Obligatorio, Texto plano-->
+<!ELEMENT clase (#PCDATA)><!--Clase contiene texto analizado que permite etiquetas-->
+<!ELEMENT jefe (nombre,clase)><!--Jefe contiene nombre y clase-->
+<!ELEMENT nombre (#PCDATA)><!--Nombre contiene texto analizado que permite etiquetas-->
+<!ELEMENT puntos (#PCDATA)><!--Puntos contiene texto analizado que permite etiquetas-->
+<!ELEMENT logros (logro+)><!--Logros contiene logro (tiene que tener minimo 1)-->
+<!ELEMENT logro (nombre,descripcion)><!--Logro contiene nombre y descripcion-->
+<!ATTLIST logro puntos (5|10|15|25) #REQUIRED><!--Atributo puntos del elemento logro: Obligatorio, solo puede ser 5/10/15/25-->
+<!ATTLIST logro completado (no|si) #REQUIRED><!--Atributo completado del elemento logro: Obligatorio, solo puede ser si/no-->
+<!ATTLIST logro secreto (no|si) #REQUIRED><!--Atributo secreto del elemento logro: Obligatorio, solo puede ser si/no-->
+<!ELEMENT descripcion (#PCDATA)><!--Descripcion contiene texto analizado que permite etiquetas-->
