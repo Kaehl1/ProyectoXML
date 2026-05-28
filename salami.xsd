@@ -19,7 +19,7 @@
                 <xs:element ref="partidas"/>
                 <xs:element ref="logros"/>
             </xs:sequence>
-            <xs:attribute name="nombre" type="xs:string"/>
+            <xs:attribute ref="nombre"/>
         </xs:complexType>
     </xs:element>
 
@@ -41,7 +41,7 @@
                 <xs:element ref="jefe"/>
                 <xs:element ref="puntos"/>
             </xs:sequence>
-            <xs:attribute name="id" type="xs:integer"/>
+            <xs:attribute ref="id"/>
         </xs:complexType>
     </xs:element>
 
@@ -72,9 +72,32 @@
                 <xs:element ref="nombre"/>
                 <xs:element ref="descripcion"/>
             </xs:sequence>
-            <xs:attribute name="puntos" type="xs:integer"/>
-            <xs:attribute name="completado" type="xs:string"/>
-            <xs:attribute name="secreto" type="xs:string"/>
+            <xs:attribute ref="puntos">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:enumeration value="5"/>
+                        <xs:enumeration value="10"/>
+                        <xs:enumeration value="15"/>
+                        <xs:enumeration value="25"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute ref="completado">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="no"/>
+                        <xs:enumeration value="si"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute ref="secreto">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="no"/>
+                        <xs:enumeration value="si"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
         </xs:complexType>
     </xs:element>
 
@@ -84,4 +107,8 @@
     <xs:element name="nombre" type="xs:string"/>
     <xs:element name="puntos" type="xs:integer"/>
     <xs:element name="descripcion" type="xs:string"/>
+    <xs:element name="nombre" type="xs:string"/>
+    <xs:element name="completado" type="xs:string"/>
+    <xs:element name="secreto" type="xs:string"/>
+    <xs:element name="id" type="xs:integer"/>
 </xs:schema>

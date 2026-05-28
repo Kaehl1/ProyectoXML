@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="GreenProtocol.xsl" type="text/xsl"?>
 <!--<!DOCTYPE perfil SYSTEM "GreenProtocol.dtd"><perfil>-->
-<!--<perfil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="salami.xsd">-->
-<perfil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EsquemaMunecaRusa.xsd">
+<perfil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="salami.xsd">
+<!--<perfil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EsquemaMunecaRusa.xsd">-->
     <!--Todo esta contenido en el elemento perfil ya que se permitirian mas de 1 juego-->
     <usuario>Kaehl</usuario>
     <juego nombre="Green Protocol"><!--El elemento juego contiene toda la informacion de las partidas del juegador y los logros conseguidos del mismo-->
